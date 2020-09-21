@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <!-- ブートストラップ導入 -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -83,10 +85,15 @@
                 <div class="title m-b-md">
                     SEIYA
                 </div>
+                <div class="title m-b-md">
+                    <a href="">ブログへ</a>
+                </div>
+
+
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel.com/docs"><button class='btn btn-default'>Docs</button></a>
+                    <a href="https://laracasts.com"><button class='btn btn-primary'>Laracasts</button></a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>

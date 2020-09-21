@@ -2,10 +2,16 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
   <title>BLOGGGGGGGGGG</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <!--ブーストラップの導入-->
+  <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
 </head>
+
 <body>
+  <nav class='navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
+    <a class='navbar-brand' >Lunchmap</a>
+  </nav>
   <div class="container">
     <h1>blog bbs</h1>
     <p>{{$message}}</p>
