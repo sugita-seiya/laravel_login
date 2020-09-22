@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+#Articleモデルを呼び出し
 use App\Article;
 use Illuminate\Http\Request;
 
@@ -24,9 +25,13 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $article= new Article();
+        $article->content ='hello seiya';
+        $article->user_name ='sugita';
+        $article->save();
+        return redirect('/articles');
     }
 
     /**
@@ -84,8 +89,10 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+    public function destroy(Request $request, Article $article,$id )
     {
-        //
+        $article=Article::find($id);
+        $article->delete();
+        return redirect('/articles');
     }
 }
