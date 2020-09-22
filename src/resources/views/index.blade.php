@@ -18,9 +18,14 @@
     @foreach($articles as $article)
       <p>
         <a href='{{ route("article.show", ["id" => $article->id]) }}'>
-        {{$article->content}}
+        {{$article->content}},
+        {{$article->user_name}}
       </p>
     @endforeach
+  
+  <div>
+    <a href={{route('article.new')}}>新規投稿</a>
+  </div>
   </div>
 </body>
 </html>
