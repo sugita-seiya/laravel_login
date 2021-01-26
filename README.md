@@ -1,9 +1,11 @@
 # laravel_loginプロジェクト作成手順</br>
-1.git clone</br>
-  git clone https://github.com/sugita-seiya/laravel_login.git</br>
-2.フォルダ移動</br>
+
+- 1.git clone</br>
+  git clone https://github.com/sugita-seiya/laravel_login.git
+- 2.フォルダ移動</br>
 　cd laravel_login</br>
-3.コンテナ起動&イメージ作成</br>
+
+- 3.コンテナ起動&イメージ作成</br>
   docker-compose up -d --build</br>
 4.コンテナに入る</br>
   docker-compose exec app ash</br>
