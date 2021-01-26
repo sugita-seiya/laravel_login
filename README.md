@@ -1,8 +1,8 @@
 # laravel_loginプロジェクト作成手順
 
-- 1.git clone
+- 1.git clone</br>
   git clone https://github.com/sugita-seiya/laravel_login.git
-- 2.フォルダ移動
+- 2.フォルダ移動</br>
 　cd laravel_login
 
 - 3.コンテナ起動&イメージ作成</br>
